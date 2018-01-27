@@ -3,9 +3,9 @@ $("#SYKABLUAD").attr("src", src);
 
 // COMMANDER
 
-$("#command").keyup(function(event){
-    if(event.keyCode == 13){
-        eval($('#command').val());
-        $('#command').val("");
-    }
-});
+$("#commandsubmit").click(function() {
+    var expression = $('#command').val();
+    var result = new Function(expression)();
+    alert(result);
+    $('#command').val("");
+})

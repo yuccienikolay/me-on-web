@@ -101,9 +101,14 @@
           <ul class="uk-nav uk-nav-default">
             <li class="uk-active"><a href="/">Главная</a></li>
             <li class="uk-parent">
-              <a href="?">Терминал</a>
+              <a id="commandsubmit" href="?">Терминал</a>
               <ul class="uk-nav-sub">
-                <li><input id="command" class="uk-input" placeholder="command me" type="text"></li>
+                <!-- <li>
+                  <input id="command" class="uk-input" placeholder="command me" type="text">
+                </li> -->
+                <li>
+                  <textarea id="command" class="uk-textarea" placeholder="command me"></textarea>
+                </li>
               </ul>
             </li>
             <li class="uk-nav-header">Действия</li>
@@ -129,7 +134,7 @@
     <script id="SYKABLUAD" type="text/javascript" src='./js/firebase/index.js'></script>
     
     <!-- My JavaScript -->
-    <script type="text/javascript" src='./js/index/main.js?debg'></script>
+    <script type="text/javascript" src='./js/index/main.js?debugme'></script>
 
   </body>
 
