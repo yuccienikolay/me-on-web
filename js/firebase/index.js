@@ -143,7 +143,7 @@ var temp = `
     {}
   </div>
   <div class="uk-card-footer">
-    <a href="#" onclick="addStar('{}');" class="uk-button uk-button-text">
+    <a href="" onclick="addStar('{}');" class="uk-button uk-button-text">
       <i class="far fa-heart"></i> {}
     </a>
   </div>
