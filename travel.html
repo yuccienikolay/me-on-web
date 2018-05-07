@@ -44,37 +44,39 @@
     <script type="text/javascript" src="./js/libs/uikit/uikit-icons.min.js"></script>
     
     <!-- Initialize Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyDq0v0T-DazWOSZwQh1OqSmYAIOadRC_Eo",
-        authDomain: "yuccienikolay.firebaseapp.com",
-        databaseURL: "https://yuccienikolay.firebaseio.com",
-        projectId: "yuccienikolay",
-        storageBucket: "yuccienikolay.appspot.com",
-        messagingSenderId: "817529025861"
-      };
-      firebase.initializeApp(config);
-    </script>
+	<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyDq0v0T-DazWOSZwQh1OqSmYAIOadRC_Eo",
+	    authDomain: "yuccienikolay.firebaseapp.com",
+	    databaseURL: "https://yuccienikolay.firebaseio.com",
+	    projectId: "yuccienikolay",
+	    storageBucket: "yuccienikolay.appspot.com",
+	    messagingSenderId: "817529025861"
+	  };
+	  firebase.initializeApp(config);
+	</script>
 
   </head>
 
   <body>
 
-    <div class="uk-flex uk-flex-row uk-flex-wrap" style="height: 100vh">
-      <div class="uk-inline uk-width-1-1 uk-light">
-        <div class="uk-position-cover uk-background-cover" style="background-image: url(https://source.unsplash.com/collection/562095/1600x900);"></div>
-        <div class="uk-overlay-primary uk-position-cover"></div>
-        <div class="uk-overlay uk-position-center">
-          <p>
-            Главная временно недоступна
-          </p>
-        </div>
-      </div>
-    </div>
+    <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -100" style="background-image: url(https://source.unsplash.com/1600x900/?travel);">
+	    <h1 class="uk-width-1-2@m uk-background-secondary uk-padding uk-text-center uk-margin-auto uk-margin-auto-vertical">Коля &amp; Настя путешествия</h1>
+	</div>
 
+	<button id="asspunch" @click="alert('omaga');" class="uk-width-1-1 uk-button uk-button-secondary">Накопленные пожопники: {{ count }}</button>
+	
+	<footer>
+		<p>weed</p>
+		<p>weed</p>
+		<p>weed</p>
+		<p>weed</p>
+		<p>weed</p>
+		<p>weed</p>
+		<p>weed</p>
+	</footer>
     <!-- Libs JavaScript -->
     <script type="text/javascript" src='./js/libs/jquery/jquery-3.2.1.min.js'></script>
     <script type="text/javascript" src='./js/libs/vue.min.js'></script>
@@ -84,7 +86,7 @@
     <script type="text/javascript" src='./js/firebase/index.js'></script>
     
     <!-- My JavaScript -->
-    <script type="text/javascript" src='./js/index/main.js'></script>
+    <script type="text/javascript" src='./js/travel.js'></script>
 
   </body>
 
