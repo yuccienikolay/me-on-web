@@ -1,0 +1,33 @@
+#back-pic {
+    height: 40vh;
+    background: url(https://source.unsplash.com/0-W0OAQEHVE);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#logo {
+    margin: 36px;
+    margin-top: -36px;
+}
+
+.map {
+    width: 100% !important;
+    height: 50vh;
+}
+
+.shadow {
+    border-radius:50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .6);
+}
+
+.uk-text-light {
+    color: white;
+}
+
+.uk-background-primary {
+    background-color: #D75749;
+}
+
+.uk-background-secondary {
+    background-color: #333741;
+}

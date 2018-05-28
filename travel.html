@@ -3,7 +3,7 @@
   <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
-    <title>Что? Где? Когда?</title>
+    <title>N&amp;N travel</title>
     <link rel="icon" href="icon/travel/72.png" type="image/png" sizes="72x72">
     <link rel="icon" href="icon/travel/144.png" type="image/png" sizes="144x144">
     <link rel="icon" href="icon/travel/192.png" type="image/png" sizes="192x192">
@@ -11,21 +11,45 @@
     <link rel="icon" href="icon/travel/12.png">
     <link rel="manifest" href="manifest/travel.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.3/css/uikit.min.css" />
+    <link rel="stylesheet" href="css/travel.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.3/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.3/js/uikit-icons.min.js"></script>
   </head>
   <body>
-    <div class="uk-flex uk-flex-row uk-flex-wrap" style="height: 100vh">
-      <div class="uk-inline uk-width-1-1 uk-light">
-        <div class="uk-position-cover uk-background-cover" style="background-image: url(https://source.unsplash.com/collection/562095/1600x900);"></div>
-        <div class="uk-overlay-primary uk-position-cover"></div>
-        <div class="uk-overlay uk-position-center">
-          <p>
-            Больше тут ничего нет, а может быть и не было. Но всегда к вашим услугам &mdash; <a class="uk-text-success" href="/">главная страница</a>.
-          </p>
+    <div id="back-pic" uk-parallax="bgy: -200"></div>
+    <div class="uk-background-muted uk-padding uk-padding-remove-top">
+      <img id="logo" class="shadow" uk-parallax="rotate: 90" src="icon/travel/72.png" uk-tooltip="Отметиться">
+      <h1  class="uk-margin">Те места в которых мы побывали</h1>
+      <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <h2>Москва</h2>
+            <div class="map" id="moscow"></div>
+            <script src="js/travel/main.js"></script>
+            <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQCShRn9VPkmmQorKZF7m2dHSYjD4tPBA&callback=initMoscow"></script>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <h2>Россия</h2>
+            <div class="uk-placeholder">Совсем скоро тут появится карта</div>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <h2>Мир</h2>
+            <div class="uk-placeholder">Совсем скоро тут появится карта</div>
+          </div>
         </div>
       </div>
     </div>
+    <footer class="uk-background-primary uk-padding">
+      <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+        <div><p  class="uk-text-light">With love by Kiselev Nikolay &copy; 2018</p></div>
+        <div><p  class="uk-text-light"></p></div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
   </body>
 </html>
