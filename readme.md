@@ -2,4 +2,12 @@
 
 Сообщение от 26 января 1822 года
 
-run: ```py -m http.server```
+ColorSchm1:
+
+| Name   | Color    |
+|--------|----------|
+| Dark   | \#333741 |
+| Green  | \#28B799 |
+| Yellow | \#F8BF39 |
+| White  | \#F1EAD1 |
+| Red    | \#D75749 |
